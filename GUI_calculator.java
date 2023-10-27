@@ -11,7 +11,8 @@ import javax.swing.UIManager;
 public class GUI_calculator implements ActionListener {
 	JFrame cal;
 	JTextField num;
-	JButton b1, b2, b3, b4, b5, b6, b7, b8, b9, zero, clr, p2, p3, exp, fac, add, sub, div, log, rec, mul, eq,addSub, sqrt, sin, cos, tan;
+	JButton b1, b2, b3, b4, b5, b6, b7, b8, b9, zero, clr, p2, p3, exp, fac, add, sub, div, log, rec, mul, eq, addSub,
+			sqrt, sin, cos, tan;
 	JPanel texts, buttons;
 	double tmp, res, a;
 	char c;
@@ -124,96 +125,133 @@ public class GUI_calculator implements ActionListener {
 	public void actionPerformed(ActionEvent e) {
 		// TODO Auto-generated method stub
 		String s = e.getActionCommand();
-
-		if (s.equals("1")) {
-			if (z == 0) {
-				num.setText(num.getText() + "1");
-			} else {
-				num.setText("");
-				num.setText(num.getText() + "1");
-				z = 0;
+		try {
+			if (s.equals("1")) {
+				if (z == 0) {
+					num.setText(num.getText() + "1");
+				} else {
+					num.setText("");
+					num.setText(num.getText() + "1");
+					z = 0;
+				}
 			}
+		} catch (Exception e1) {
+			// TODO: handle exception
+		}
+		try {
+			if (s.equals("2")) {
+				if (z == 0) {
+					num.setText(num.getText() + "2");
+				} else {
+					num.setText("");
+					num.setText(num.getText() + "2");
+					z = 0;
+				}
+			}
+		} catch (Exception e2) {
+			// TODO: handle exception
 		}
 
-		if (s.equals("2")) {
-			if (z == 0) {
-				num.setText(num.getText() + "2");
-			} else {
-				num.setText("");
-				num.setText(num.getText() + "2");
-				z = 0;
+		try {
+			if (s.equals("3")) {
+				if (z == 0) {
+					num.setText(num.getText() + "3");
+				} else {
+					num.setText("");
+					num.setText(num.getText() + "3");
+					z = 0;
+				}
 			}
+		} catch (Exception e3) {
+			// TODO: handle exception
 		}
-		if (s.equals("3")) {
-			if (z == 0) {
-				num.setText(num.getText() + "3");
-			} else {
-				num.setText("");
-				num.setText(num.getText() + "3");
-				z = 0;
+		try {
+			if (s.equals("4")) {
+				if (z == 0) {
+					num.setText(num.getText() + "4");
+				} else {
+					num.setText("");
+					num.setText(num.getText() + "4");
+					z = 0;
+				}
 			}
+		} catch (Exception e4) {
+			// TODO: handle exception
 		}
-		if (s.equals("4")) {
-			if (z == 0) {
-				num.setText(num.getText() + "4");
-			} else {
-				num.setText("");
-				num.setText(num.getText() + "4");
-				z = 0;
+		try {
+			if (s.equals("5")) {
+				if (z == 0) {
+					num.setText(num.getText() + "5");
+				} else {
+					num.setText("");
+					num.setText(num.getText() + "5");
+					z = 0;
+				}
 			}
+		} catch (Exception e5) {
+			// TODO: handle exception
 		}
-		if (s.equals("5")) {
-			if (z == 0) {
-				num.setText(num.getText() + "5");
-			} else {
-				num.setText("");
-				num.setText(num.getText() + "5");
-				z = 0;
+		try {
+			if (s.equals("6")) {
+				if (z == 0) {
+					num.setText(num.getText() + "6");
+				} else {
+					num.setText("");
+					num.setText(num.getText() + "6");
+					z = 0;
+				}
 			}
+		} catch (Exception e6) {
+			// TODO: handle exception
 		}
-		if (s.equals("6")) {
-			if (z == 0) {
-				num.setText(num.getText() + "6");
-			} else {
-				num.setText("");
-				num.setText(num.getText() + "6");
-				z = 0;
+		try {
+			if (s.equals("7")) {
+				if (z == 0) {
+					num.setText(num.getText() + "7");
+				} else {
+					num.setText("");
+					num.setText(num.getText() + "7");
+					z = 0;
+				}
 			}
+		} catch (Exception e7) {
+			// TODO: handle exception
 		}
-		if (s.equals("7")) {
-			if (z == 0) {
-				num.setText(num.getText() + "7");
-			} else {
-				num.setText("");
-				num.setText(num.getText() + "7");
-				z = 0;
+		try {
+			if (s.equals("8")) {
+				if (z == 0) {
+					num.setText(num.getText() + "8");
+				} else {
+					num.setText("");
+					num.setText(num.getText() + "8");
+					z = 0;
+				}
 			}
+		} catch (Exception e8) {
+			// TODO: handle exception
 		}
-		if (s.equals("8")) {
-			if (z == 0) {
-				num.setText(num.getText() + "8");
-			} else {
-				num.setText("");
-				num.setText(num.getText() + "8");
-				z = 0;
+		try {
+			if (s.equals("9")) {
+				if (z == 0) {
+					num.setText(num.getText() + "9");
+				} else {
+					num.setText("");
+					num.setText(num.getText() + "9");
+					z = 0;
+				}
 			}
+		} catch (Exception e9) {
+			// TODO: handle exception
 		}
-		if (s.equals("9")) {
-			if (z == 0) {
-				num.setText(num.getText() + "9");
-			} else {
-				num.setText("");
-				num.setText(num.getText() + "9");
-				z = 0;
-			}
-		}
-		if (s.equals("0")) {
-			if (z == 0) {
-				num.setText(num.getText() + "0");
-			} else {
-				num.setText("");
-				num.setText(num.getText() + "0");
-				z = 0;
+		try {
+			if (s.equals("0")) {
+				if (z == 0) {
+					num.setText(num.getText() + "0");
+				} else {
+					num.setText("");
+					num.setText(num.getText() + "0");
+					z = 0;
+				}
 			}
 //			if (s.equals("+")) {
 //				if (num.getText().equals("")) {
@@ -227,121 +265,158 @@ public class GUI_calculator implements ActionListener {
 //				}
 //				num.requestFocus();
 //			}
+		} catch (Exception e10) {
+			// TODO: handle exception
 		}
-		if (s.equals("AC")) {
-			num.setText("");
-			z = 0;
-		}
-		if (s.equals("log")) {
-			if (num.getText().equals("")) {
+		try {
+			if (s.equals("AC")) {
 				num.setText("");
-			} else {
-				a = Math.log(Double.parseDouble(num.getText()));
-				num.setText("");
-				num.setText(num.getText() + a);
+				z = 0;
 			}
+		} catch (Exception e11) {
+			// TODO: handle exception
 		}
-		if (Character.isDigit(s.charAt(0))) {
-		} else if (s.equals("+") || s.equals("-") || s.equals("*") || s.equals("/")) {
-			if (num.getText().equals("")) {
-				num.setText("");
-				a = 0;
-				c = s.charAt(0);
-			} else {
-				a = Double.parseDouble(num.getText());
-				num.setText("");
-				c = s.charAt(0);
-			}
-		} else if (s.equals("=")) {
-			if (c != '\0') {
-				Double b = Double.parseDouble(num.getText());
-				switch (c) {
-				case '+':
-					res = a + b;
-					break;
-				case '-':
-					res = a - b;
-					break;
-				case '/':
-					res = a / b;
-					break;
-				case '*':
-					res = a * b;
-					break;
+		try {
+			if (s.equals("log")) {
+				if (num.getText().equals("")) {
+					num.setText("");
+				} else {
+					a = Math.log(Double.parseDouble(num.getText()));
+					num.setText("");
+					num.setText(num.getText() + a);
 				}
-				num.setText("");
-				num.setText(num.getText() + res);
-				z = 1;
 			}
+		} catch (Exception e12) {
+			// TODO: handle exception
 		}
-		if (s.equals("Sqrt")) {
-			if (num.getText().equals("")) {
-				num.setText("");
-			} else {
-				a = Math.sqrt(Double.parseDouble(num.getText()));
-				num.setText("");
-				num.setText(num.getText() + a);
+		try {
+			if (Character.isDigit(s.charAt(0))) {
+			} else if (s.equals("+") || s.equals("-") || s.equals("*") || s.equals("/")) {
+				if (num.getText().equals("")) {
+					num.setText("");
+					a = 0;
+					c = s.charAt(0);
+				} else {
+					a = Double.parseDouble(num.getText());
+					num.setText("");
+					c = s.charAt(0);
+				}
+			} else if (s.equals("=")) {
+				if (c != '\0') {
+					Double b = Double.parseDouble(num.getText());
+					switch (c) {
+					case '+':
+						res = a + b;
+						break;
+					case '-':
+						res = a - b;
+						break;
+					case '/':
+						res = a / b;
+						break;
+					case '*':
+						res = a * b;
+						break;
+					}
+					num.setText("");
+					num.setText(num.getText() + res);
+					z = 1;
+				}
 			}
+		} catch (Exception e13) {
+			// TODO: handle exception
 		}
-		if (s.equals("1/x")) {
-			if (num.getText().equals("")) {
-				num.setText("");
-			} else {
-				a = 1 / Double.parseDouble(num.getText());
-				num.setText("");
-				num.setText(num.getText() + a);
+		try {
+			if (s.equals("Sqrt")) {
+				if (num.getText().equals("")) {
+					num.setText("");
+				} else {
+					a = Math.sqrt(Double.parseDouble(num.getText()));
+					num.setText("");
+					num.setText(num.getText() + a);
+				}
 			}
-			
+		} catch (Exception e14) {
+			// TODO: handle exception
+		}
+		try {
+			if (s.equals("1/x")) {
+				if (num.getText().equals("")) {
+					num.setText("");
+				} else {
+					a = 1 / Double.parseDouble(num.getText());
+					num.setText("");
+					num.setText(num.getText() + a);
+				}
+			}
+		} catch (Exception e15) {
+			// TODO: handle exception
+		}
+		try {
 			if (s.equals("n!")) {
 				if (!num.getText().isEmpty()) {
-		            double number = Double.parseDouble(num.getText());
-		            double result = fact(number);
-		            num.setText(Double.toString(result));
-		            z = 1;
-		        }
-		    }
-		}
-		if (s.equals("SIN")) {
-			if (num.getText().equals("")) {
-				num.setText("");
-			} else {
-				a = Math.sin(Double.parseDouble(num.getText()));
-				num.setText("");
-				num.setText(num.getText() + a);
+					double number = Double.parseDouble(num.getText());
+					double result = fact(number);
+					num.setText(Double.toString(result));
+					z = 1;
+				}
 			}
+		} catch (Exception e16) {
+			// TODO: handle exception
 		}
-		if (s.equals("COS")) {
-			if (num.getText().equals("")) {
-				num.setText("");
-			} else {
-				a = Math.cos(Double.parseDouble(num.getText()));
-				num.setText("");
-				num.setText(num.getText() + a);
+		try {
+			if (s.equals("SIN")) {
+				if (num.getText().equals("")) {
+					num.setText("");
+				} else {
+					a = Math.sin(Double.parseDouble(num.getText()));
+					num.setText("");
+					num.setText(num.getText() + a);
+				}
 			}
+		} catch (Exception e17) {
+			// TODO: handle exception
 		}
-		if (s.equals("TAN")) {
-			if (num.getText().equals("")) {
-				num.setText("");
-			} else {
-				a = Math.tan(Double.parseDouble(num.getText()));
-				num.setText("");
-				num.setText(num.getText() + a);
+		try {
+			if (s.equals("COS")) {
+				if (num.getText().equals("")) {
+					num.setText("");
+				} else {
+					a = Math.cos(Double.parseDouble(num.getText()));
+					num.setText("");
+					num.setText(num.getText() + a);
+				}
 			}
+		} catch (Exception e18) {
+			// TODO: handle exception
+		}
+		try {
+			if (s.equals("TAN")) {
+				if (num.getText().equals("")) {
+					num.setText("");
+				} else {
+					a = Math.tan(Double.parseDouble(num.getText()));
+					num.setText("");
+					num.setText(num.getText() + a);
+				}
+			}
+		} catch (Exception e19) {
+			// TODO: handle exception
 		}
 	}
 
 	private double fact(double parseDouble) {
 		int n = 0;
 		// TODO Auto-generated method stub
-	    if (n == 0) {
-	        return 1;
-	    }
+		if (n == 0) {
+			return 1;
+		}
 
-	    double factorial = 1;
-	    for (int i = 1; i <= n; i++) {
-	        factorial *= i;
-	    }
-	    return factorial;
+		double factorial = 1;
+		for (int i = 1; i <= n; i++) {
+			factorial *= i;
+		}
+		return factorial;
 	}
 
 	public static void main(String[] args) {
